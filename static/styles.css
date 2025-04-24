@@ -10,28 +10,29 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 100px; 
-  height: 10px;
-  z-index: 2;
+  width: auto;
+  height: auto;
+  z-index: 0;
 }
 
 /* Body */
 body {
   font-family: "Orbitron", sans-serif;
-  background-color: #252929;
+  background-color: #0B0B45;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
   position: relative;
+  color: #FFFFFF;
 }
 
 /* Background image */
 #background-image {
   position: fixed;
   top: 0;
-  left: 400px; /* Adjusted to bring waves closer */
+  left: 400px;
   width: calc(100% - 400px);
   height: 100%;
   object-fit: cover;
@@ -41,16 +42,16 @@ body {
 
 /* Chat container */
 .chat-container {
-  top : 2%;
-  width: 80%; 
-  height: 80%; 
-  background-color: rgb(37, 41, 41,0.7);
-  border-radius: 20px; 
+  top: 2%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(11, 11, 69, 0.8);
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 2px solid #ffca28; 
+  border: 2px solid #E03A3E;
   z-index: 1;
 }
 
@@ -69,9 +70,9 @@ body {
 .icon {
   text-decoration: none;
   transition: border-color 0.3s;
-  background-color: #252929; /* Black background */
-  border: 2px solid #ffffff; /* White border */
-  border-radius: 50%; /* Circular */
+  background-color: #0B0B45;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   display: flex;
@@ -79,13 +80,8 @@ body {
   justify-content: center;
 }
 
-.icon i {
-  color: #ffffff;
-  font-size: 24px; 
-}
-
 .icon:hover {
-  border-color: #ffca28; 
+  border-color: #0072CE;
 }
 
 .social-icon-img {
@@ -97,7 +93,7 @@ body {
 .chat-header {
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,13 +104,13 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .header-text p {
   font-family: "Orbitron", sans-serif;
   font-size: 1em;
-  color: #ffffff;
+  color: #FFFFFF;
   text-transform: uppercase;
   opacity: 0.8;
 }
@@ -126,48 +122,37 @@ body {
   padding: 2vh;
   overflow-y: auto;
   background-color: transparent;
-  color: #ffffff;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
 
-.chat-messages p {
-  font-family: "Orbitron", sans-serif;
-  margin: 1vh 0;
-  padding: 1.5vh 2vw;
-  background-color: #c8543c;
-  border-radius: 5px;
-  max-width: 70%;
-}
-
+.chat-messages p,
 .chat-messages .bot-message {
-  font-family: "Orbitron", sans-serif;
   margin: 1vh 0;
   padding: 1.5vh 2vw;
-  background-color: #c8543c;
-  color: #ffffff;
+  background-color: #0072CE;
+  color: #FFFFFF;
   border-radius: 10px;
-  align-self: flex-start; 
+  align-self: flex-start;
+  max-width: 70%;
 }
 
 .chat-messages .user-message {
-  font-family: "Orbitron", sans-serif;
   margin: 1vh 0;
   padding: 1.5vh 2vw;
-  background-color: rgba(37, 41, 41, 0.8);
-  border: 2px solid #ffca28;
-  border-radius: 25px;
-  color: #ffffff;
+  background-color: #E03A3E;
+  color: #FFFFFF;
   border-radius: 5px;
   max-width: 70%;
-  align-self: flex-end; 
+  align-self: flex-end;
 }
 
 .chat-messages .test-query {
-  font-family: "Orbitron", sans-serif;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #ffca28;
+  background-color: #0072CE;
+  color: #FFFFFF;
   cursor: pointer;
   text-align: center;
   width: 24%;
@@ -175,14 +160,13 @@ body {
 }
 
 .chat-messages .test-query:hover {
-  background-color: rgba(37, 41, 41, 0.8);
-  border: 2px solid #ffca28;
-  border-radius: 25px;
-  color: #ffffff;
+  background-color: #E03A3E;
+  color: #FFFFFF;
 }
 
-.chat-messages strong, .chat-messages span {
-  align-self: flex-start; /* Align bot responses and errors to the left */
+.chat-messages strong,
+.chat-messages span {
+  align-self: flex-start;
   margin: 1vh 0;
   max-width: 70%;
   display: block;
@@ -197,27 +181,27 @@ body {
 }
 
 #query {
-  font-family: "Orbitron", sans-serif;
   flex-grow: 1;
   padding: 15px;
   border: none;
   border-radius: 25px;
-  background-color: #c8543c;
-  color: #ffffff;
+  background-color: #F5F5F5;
+  color: #0B0B45;
   font-size: 1em;
   outline: none;
+  font-family: "Orbitron", sans-serif;
 }
 
 #query::placeholder {
-  color: #ffffff;
+  color: #0B0B45;
   opacity: 0.7;
 }
 
 button {
   padding: 15px 30px;
   font-family: "Orbitron", sans-serif;
-  background-color: #ffc334;
-  color: #1a1a1a;
+  background-color: #E03A3E;
+  color: #FFFFFF;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -226,34 +210,34 @@ button {
 }
 
 button:hover {
-  background-color: #ffa726;
+  background-color: #0072CE;
 }
 
-
 .description {
-  margin-bottom: 20px; /* Adds space below the paragraph */
+  margin-bottom: 20px;
 }
 
 .button-container {
   display: flex;
-  gap: 10px; /* Space between buttons */
-  flex-wrap: wrap; /* Ensures buttons wrap properly on smaller screens */
-  justify-content: center; /* Centers buttons horizontally */
-  align-items: center; /* Aligns items vertically */
-  text-align: center; /* Ensures text is centered */
-  margin-top: 20px; /* Adds space between text and buttons */
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
   text-transform: none;
 }
 
 .non-query {
-  margin-top: 10px; /* Adds space between paragraph and buttons */
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   text-transform: none;
-  background-color: #F89734;  /* Orange */
+  background-color: #0072CE;
+  color: #FFFFFF;
 }
 
 .non-query:hover {
-  background-color: #e07b2a;  /* Darker Orange on Hover */
+  background-color: #E03A3E;
 }
