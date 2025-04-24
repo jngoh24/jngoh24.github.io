@@ -10,8 +10,8 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  width: auto;
-  height: 30px;
+  width: 300px;
+  height: 100px;
   z-index: 0;
 }
 
