@@ -5,27 +5,26 @@
   box-sizing: border-box;
 }
 
-/* Logo at the top left */
-.page-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 250px;
-  height: 70px;
-  z-index: 0;
-}
-
-/* Body */
+/* Updated Main Background */
 body {
+  background-color: #0D1B2A; /* Deep Navy Blue */
   font-family: "Orbitron", sans-serif;
-  background-color: #0B0B45;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  color: #FFFFFF;
+}
+
+/* Logo at the top left */
+.page-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px; 
+  height: 70px;
+  z-index: 0;
 }
 
 /* Background image */
@@ -42,16 +41,16 @@ body {
 
 /* Chat container */
 .chat-container {
-  top: 2%;
-  width: 80%;
-  height: 80%;
-  background-color: rgba(11, 11, 69, 0.8);
-  border-radius: 20px;
+  top : 2%;
+  width: 80%; 
+  height: 80%; 
+  background-color: rgba(13, 27, 42, 0.7); /* Deep Navy Blue with transparency */
+  border-radius: 20px; 
   overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 2px solid #E03A3E;
+  border: 2px solid #E63946; /* Vibrant Red */
   z-index: 1;
 }
 
@@ -70,8 +69,8 @@ body {
 .icon {
   text-decoration: none;
   transition: border-color 0.3s;
-  background-color: #0B0B45;
-  border: 2px solid #FFFFFF;
+  background-color: #252929;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -81,7 +80,7 @@ body {
 }
 
 .icon:hover {
-  border-color: #0072CE;
+  border-color: #E63946; /* Vibrant Red */
 }
 
 .social-icon-img {
@@ -93,7 +92,7 @@ body {
 .chat-header {
   padding: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,13 +103,13 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-text p {
   font-family: "Orbitron", sans-serif;
   font-size: 1em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   opacity: 0.8;
 }
@@ -122,37 +121,47 @@ body {
   padding: 2vh;
   overflow-y: auto;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
-.chat-messages p,
-.chat-messages .bot-message {
+.chat-messages p {
+  font-family: "Orbitron", sans-serif;
   margin: 1vh 0;
   padding: 1.5vh 2vw;
-  background-color: #0072CE;
-  color: #FFFFFF;
-  border-radius: 10px;
-  align-self: flex-start;
+  background-color: #c8543c;
+  border-radius: 5px;
   max-width: 70%;
+}
+
+.chat-messages .bot-message {
+  font-family: "Orbitron", sans-serif;
+  margin: 1vh 0;
+  padding: 1.5vh 2vw;
+  background-color: #E63946; /* Vibrant Red */
+  color: #ffffff;
+  border-radius: 10px;
+  align-self: flex-start; 
 }
 
 .chat-messages .user-message {
+  font-family: "Orbitron", sans-serif;
   margin: 1vh 0;
   padding: 1.5vh 2vw;
-  background-color: #E03A3E;
-  color: #FFFFFF;
+  background-color: rgba(13, 27, 42, 0.8);
+  border: 2px solid #E63946; /* Vibrant Red */
   border-radius: 5px;
+  color: #ffffff;
   max-width: 70%;
-  align-self: flex-end;
+  align-self: flex-end; 
 }
 
 .chat-messages .test-query {
+  font-family: "Orbitron", sans-serif;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #0072CE;
-  color: #FFFFFF;
+  background-color: #E63946; /* Vibrant Red */
   cursor: pointer;
   text-align: center;
   width: 24%;
@@ -160,16 +169,10 @@ body {
 }
 
 .chat-messages .test-query:hover {
-  background-color: #E03A3E;
-  color: #FFFFFF;
-}
-
-.chat-messages strong,
-.chat-messages span {
-  align-self: flex-start;
-  margin: 1vh 0;
-  max-width: 70%;
-  display: block;
+  background-color: rgba(13, 27, 42, 0.8);
+  border: 2px solid #E63946;
+  border-radius: 25px;
+  color: #ffffff;
 }
 
 /* Form */
@@ -181,27 +184,27 @@ body {
 }
 
 #query {
+  font-family: "Orbitron", sans-serif;
   flex-grow: 1;
   padding: 15px;
   border: none;
   border-radius: 25px;
-  background-color: #F5F5F5;
-  color: #0B0B45;
+  background-color: #E63946; /* Vibrant Red */
+  color: #ffffff;
   font-size: 1em;
   outline: none;
-  font-family: "Orbitron", sans-serif;
 }
 
 #query::placeholder {
-  color: #0B0B45;
+  color: #ffffff;
   opacity: 0.7;
 }
 
 button {
   padding: 15px 30px;
   font-family: "Orbitron", sans-serif;
-  background-color: #E03A3E;
-  color: #FFFFFF;
+  background-color: #E63946; /* Vibrant Red */
+  color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -210,34 +213,14 @@ button {
 }
 
 button:hover {
-  background-color: #0072CE;
+  background-color: #b92c37; /* Darker Red */
 }
 
-.description {
-  margin-bottom: 20px;
-}
-
-.button-container {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  text-transform: none;
-}
-
+/* Accent Button Colors */
 .non-query {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: none;
-  background-color: #0072CE;
-  color: #FFFFFF;
+  background-color: #E63946; /* Vibrant Red */
 }
 
 .non-query:hover {
-  background-color: #E03A3E;
+  background-color: #b92c37; /* Darker Red */
 }
