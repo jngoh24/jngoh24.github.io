@@ -23,17 +23,16 @@ async function sendQuery(query) {
     });
 
     const data = await res.json();
-    
+
     // Remove the "Loading..." message before displaying the response
     const loadingElement = document.getElementById("loading-message");
     if (loadingElement) loadingElement.remove();
 
     // Display the chatbot response
-    if (data.error) {
-      responseDiv.innerHTML += `<p class="bot-message" style="color:red;">Error: ${data.error}</p>`;
-
-    } else {
+    if (data && data.response) {
       responseDiv.innerHTML += `<p class="bot-message"><strong>Answer:</strong><br>${data.response}</p>`;
+    } else {
+      responseDiv.innerHTML += `<p class="bot-message" style="color:red;">Error: Unexpected response from the server.</p>`;
     }
   } catch (err) {
     // Remove the "Loading..." message in case of error
