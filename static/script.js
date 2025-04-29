@@ -16,7 +16,7 @@ async function sendQuery(query) {
   responseDiv.appendChild(loadingMessage);
 
   try {
-    const res = await fetch('https://askadam-api.onrender.com', {
+    const res = await fetch('https://askadam-api.onrender.com/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: query })
