@@ -42,8 +42,8 @@ body {
 /* Chat container */
 .chat-container {
   top : 2%;
-  width: 70%; 
-  height: 70%; 
+  width: 65%; 
+  height: 65%; 
   background-color: rgba(13, 27, 42, 0.7); /* Deep Navy Blue with transparency */
   border-radius: 20px; 
   overflow: hidden;
