@@ -33,7 +33,7 @@ async function sendQuery(query) {
       responseDiv.innerHTML += `<p class="bot-message" style="color:red;">Error: ${data.error}</p>`;
 
     } else {
-      responseDiv.innerHTML += `<p class="bot-message"><strong>Answer:</strong><br>${data.answer}</p>`;
+      responseDiv.innerHTML += `<p class="bot-message"><strong>Answer:</strong><br>${data.response}</p>`;
     }
   } catch (err) {
     // Remove the "Loading..." message in case of error
