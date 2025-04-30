@@ -24,7 +24,7 @@ body {
   left: 10px;
   width: 20vw;            /* Scales width based on viewport width */
   height: auto; 
-  max-height: 120px; 
+  max-height: 105px; 
   max-width: 300px;       /* Prevents logo from getting too large */
   min-width: 100px;       /* Ensures it's visible on very small screens */
   z-index: 0;
