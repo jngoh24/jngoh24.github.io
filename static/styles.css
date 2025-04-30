@@ -200,6 +200,21 @@ body {
   opacity: 0.7;
 }
 
+#team-db-btn {
+  padding: 15px 30px;
+  font-family: "Orbitron", sans-serif;/* Teal, stands out from red */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold
+  text-transform: uppercase;
+}
+
+#team-db-btn:hover {
+  background-color: #b92c37;
+}
+
 button {
   padding: 15px 30px;
   font-family: "Orbitron", sans-serif;
