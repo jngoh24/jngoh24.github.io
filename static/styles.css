@@ -202,12 +202,13 @@ body {
 
 #team-db-btn {
   padding: 15px 30px;
-  font-family: "Orbitron", sans-serif;/* Teal, stands out from red */
+  font-family: "Orbitron", sans-serif; 
+  background-color: #b92c37;
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-weight: bold
+  font-weight: bold;
   text-transform: uppercase;
 }
 
